@@ -1,0 +1,62 @@
+// Program: Demonstration of Static Variable in Java
+// Static Variable Example - Student Class
+
+class Student {
+    int id;
+    String name;
+    String course;
+    static String college = "YCCE";
+
+    Student(int id, String name, String course) {
+        this.id = id;
+        this.name = name;
+        this.course = course;
+    }
+
+    void display() {
+        System.out.println("Student ID      : " + id);
+        System.out.println("Student Name    : " + name);
+        System.out.println("Course          : " + course);
+        System.out.println("College         : " + Student.college);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+
+        System.out.println("==============================================");
+        System.out.println("      STATIC VARIABLE DEMONSTRATION IN JAVA");
+        System.out.println("==============================================");
+
+        System.out.println("\nStudent 1 Details");
+        System.out.println("----------------------------------------------");
+        Student s1 = new Student(10, "Huzaif", "DSA");
+        s1.display();
+
+        System.out.println("\nStudent 2 Details");
+        System.out.println("----------------------------------------------");
+        Student s2 = new Student(11, "Adil", "DBMS");
+        s2.display();
+
+        System.out.println("\nStudent 3 Details");
+        System.out.println("----------------------------------------------");
+        Student s3 = new Student(12, "Owais", "CN");
+        s3.display();
+
+        System.out.println("\n==============================================");
+        System.out.println("Observation:");
+        System.out.println("The static variable 'college' is shared by");
+        System.out.println("all Student objects, so every student has");
+        System.out.println("the same college name: " + Student.college);
+        System.out.println("==============================================");
+    }
+}
+#2 Questions 2
+
+Bank Management System
+
+
+
+
+
+
