@@ -1,1 +1,63 @@
+oops->object orineted programming deals with classes and object 
+class->It is a Bluprint to create object 
+object->ALL the things in our surrounding is object like,mobile,laptops,copy and all all are objects
+ex-> car ->All properties of the car like brand ,color,speed ,and it have its Behaviour
 
+object has Two properties->   behaviour and properties
+all the objects are created in the class only
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+class Car{
+    
+    String color;
+String model;
+String brand;
+
+int year;
+int speed;
+Car(String color,String model,String brand,int year,int speed){
+    this.color=color;
+    this.model=model;
+    this.brand=brand;
+    this.year=year;
+    this.speed=speed;
+}
+
+void speed(int i){
+    speed=speed+i;
+    System.out.println("The new Speed is "+speed);
+}
+
+void brake(int decreament){
+    speed=speed-decreament;
+    if(speed<0){
+        speed=0;
+    }
+    System.out.println("The new Speed is "+speed);
+}
+  void display() {
+        System.out.println("Brand : " + brand);
+        System.out.println("Model : " + model);
+        System.out.println("Color : " + color);
+        System.out.println("Year  : " + year);
+        System.out.println("Speed : " + speed);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+       Car c=new Car("Black","Punch","Tata",2016,70);
+       c.speed(30);
+       c.brake(20);
+       c.display();
+    }
+}
+
+output
+The new Speed is 100
+The new Speed is 80
+Brand : Tata
+Model : Punch
+Color : Black
+Year  : 2016
+Speed : 80
