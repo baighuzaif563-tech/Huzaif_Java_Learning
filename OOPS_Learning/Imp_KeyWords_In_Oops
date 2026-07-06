@@ -1,0 +1,25 @@
+# static keyword-> Ye sare chiz common dikahne ke liye use hota h 
+ex-> person p1->Belongs to college A
+person p2-> also beleongs to College A  As they Belongs To common College they the college can be declared as Common 
+static  string college="Ycce"
+p1.college();
+p2.college();
+
+Both Have the Output as Ycce
+Static can also be Accessed without creation of the Object
+
+void->No return type
+double->... values (15-16)
+boolean->true false
+String->Store the text
+float->.. data types (7-8)
+new Keyword it is used for Creating an Object
+this->It is use for the Current Object Reference
+Super->it is used to call the parent clss methods and Attributes 
+Extends ->It is use to Inherit the Parent Class Methods And Funtions Into the Child Class 
+Implements->Use is the InterFace
+if/else/switch/Case/Break/Continue/do/
+final->once Declared Cannot be Changed
+finally->Hamesha Execute Hota h Error Ho Ya Na ho
+Intanceof->object Referenc Empthy
+String is a KeyWord Not a Class
