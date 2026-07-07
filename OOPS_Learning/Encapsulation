@@ -1,1 +1,86 @@
+## Encapsulation (Short Notes)
 
+**Definition:**
+Encapsulation means **wrapping data (variables) and methods into one class** and **hiding data** using `private` variables.
+
+### Syntax
+
+```java
+class Student {
+    private int age;      // Data Hidden
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
+```
+
+### Important Points ⭐
+
+* ✅ Variables should be `private`.
+* ✅ Use **Setter** to set/update values.
+* ✅ Use **Getter** to read values.
+* ✅ Use `this` keyword in setters.
+* ✅ Add validation in setters if needed.
+* ✅ Provides **Data Hiding** and **Controlled Access**.
+
+### Benefits
+
+* 🔒 Security
+* 🎯 Controlled access to data
+* ♻️ Easy maintenance
+* 🛡️ Prevents invalid data
+
+### Interview One-Liner
+
+> **Encapsulation = `private` variables + Getter + Setter + Data Hiding + Controlled Access.**
+
+
+
+
+
+
+
+
+Ex Of Encapsulation
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+class Student{
+    private int age;
+    private int rollno;
+    public void setage(int age){
+        this.age=age;
+        
+    }
+    public int getage(){
+        return age;
+    }
+ 
+    public void setroll(int rollno){
+        this.rollno=rollno;
+    }
+    public int getrollno(){
+        return rollno;
+    }
+    
+    
+    
+}
+class Main {
+    public static void main(String[] args) {
+        Student s1=new Student();
+        s1.setage(10);
+        System.out.println( s1.getage());
+        
+                Student s2=new Student();
+        s2.setage(15);
+        s2.setroll(23);
+        System.out.println( s2.getage());
+          System.out.println( s2.getrollno());
+    }
+}
