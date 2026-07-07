@@ -67,5 +67,240 @@ Benefits
 📖 Easy to maintain
 🚀 Less code duplication
 
-Practice q
+class Student{
+    String name;
+
+    void displayName(){
+        System.out.println(name);
+    }
+}
+
+class Teacher{
+    String name;
+
+    void displayName(){
+        System.out.println(name);
+    }
+}
+
+
+📌 Child Class ko kya nahi milta?
+❌ Private members
+private String brand;
+
+Child directly access nahi kar sakta.
+
+❌ Constructors
+
+Constructors inherit nahi hote.
+
+📌 Types of Inheritance
+1. Single Inheritance
+A
+│
+▼
+B
+
+Ek Parent → Ek Child
+
+2. Multilevel Inheritance
+A
+│
+▼
+B
+│
+▼
+C
+3. Hierarchical Inheritance
+      A
+     / \
+    ▼   ▼
+    B   C
+4. Multiple Inheritance
+A      B
+ \    /
+  \  /
+   C
+
+❌ Java Classes me support nahi karta.
+
+(Interfaces se possible hai.)
+
+📌 Advantages
+✅ Code Reusability
+
+Same code baar-baar nahi likhna padta.
+
+✅ Easy Maintenance
+
+Parent me change karo.
+
+Child automatically updated code use karega.
+
+✅ Less Code
+
+Duplicate code kam ho jata hai.
+
+📌 Important Rules ⭐⭐⭐⭐⭐
+Rule 1
+
+Inheritance ke liye
+
+extends
+
+use hota hai.
+
+Rule 2
+
+Child object Parent ke methods call kar sakta hai.
+
+Student s = new Student();
+
+s.displayName();
+Rule 3
+
+Parent object Child ke methods call nahi kar sakta.
+
+❌ Wrong
+
+Person p = new Person();
+
+p.displayRoll();
+Rule 4
+
+Inheritance IS-A Relationship follow karta hai.
+
+Examples
+
+Dog IS-A Animal
+
+Car IS-A Vehicle
+
+Student IS-A Person
+Rule 5
+
+Private variables direct access nahi hote.
+
+Rule 6
+
+Constructors inherit nahi hote.
+
+📌 Real Life Example
+Vehicle
+│
+├── brand
+├── engine
+├── start()
+│
+└──────► Car
+
+Car automatically use kar sakti hai
+
+✔ brand
+
+✔ engine
+
+✔ start()
+
+📌 Complete Example
+class Vehicle {
+
+    String brand;
+
+    void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    void displayBrand() {
+        System.out.println("Brand: " + brand);
+    }
+}
+
+class Car extends Vehicle {
+
+    void drive() {
+        System.out.println("Car is running...");
+    }
+}
+
+class Main {
+
+    public static void main(String[] args) {
+
+        Car c = new Car();
+
+        c.setBrand("Toyota");
+
+        c.displayBrand();
+
+        c.drive();
+    }
+}
+Output
+Brand: Toyota
+
+Car is running...
+📌 Interview Questions
+Q1. Inheritance kya hai?
+
+Ek class dusri class ki properties aur methods ko acquire karti hai using extends.
+
+Q2. Why do we use Inheritance?
+Code Reusability
+Less Code
+Easy Maintenance
+Q3. Keyword used?
+extends
+Q4. Java me Multiple Inheritance support karta hai?
+
+Classes ke through → No ❌
+
+Q5. Inheritance kis relationship ko show karta hai?
+IS-A Relationship
+
+Example
+
+Dog IS-A Animal
+Q6. Constructors inherit hote hain?
+
+❌ No
+
+Q7. Private variables direct access ho sakte hain?
+
+❌ No
+
+🚀 30-Second Revision
+Inheritance
+
+Definition
+→ Parent ki properties aur methods Child use karta hai.
+
+Keyword
+→ extends
+
+Relationship
+→ IS-A
+
+Benefits
+→ Code Reusability
+→ Less Code
+→ Easy Maintenance
+
+Child Gets
+✔ Variables
+✔ Methods
+
+Child Doesn't Get (Directly)
+✘ Private Members
+✘ Constructors
+
+Types
+✔ Single
+✔ Multilevel
+✔ Hierarchical
+✘ Multiple (Classes me nahi)
+🔥 Exam Trick (1 Line)
+
+"Inheritance ka main purpose hai Code Reusability. Child class extends keyword use karke Parent class ke variables aur methods ko use karti hai. Ye IS-A relationship ko represent karta hai."
+
 
