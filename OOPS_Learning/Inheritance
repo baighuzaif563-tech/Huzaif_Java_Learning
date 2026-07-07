@@ -1,1 +1,71 @@
+Definition:
+Inheritance is the process by which one class acquires the properties and methods of another class using the extends keyword.
+
+Syntax
+class Animal {
+    void sound() {
+        System.out.println("Animal Sound");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Bark");
+    }
+}
+Main
+Dog d = new Dog();
+
+d.sound();   // Parent class method
+d.bark();    // Child class method
+Important Points ⭐
+✅ Uses extends keyword.
+✅ Parent class is called Superclass.
+✅ Child class is called Subclass.
+✅ Child inherits variables and methods of parent.
+✅ Promotes Code Reusability.
+✅ Java supports Single, Multilevel, and Hierarchical inheritance (not multiple inheritance with classes).
+Benefits
+♻️ Code Reusability
+📖 Easy to maintain
+🚀 Less code duplication
+Interview One-Liner
+
+Inheritance = Acquiring the properties and methods of one class into another class using extends.
+
+
+Ex->
+
+class Animal {
+    void sound() {
+        System.out.println("Animal Sound");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Bark");
+    }
+}
+
+Dog d = new Dog();
+
+d.sound();   // Parent class method
+d.bark();    // Child class method
+
+
+Important Points ⭐
+✅ Uses extends keyword.
+✅ Parent class is called Superclass.
+✅ Child class is called Subclass.
+✅ Child inherits variables and methods of parent.
+✅ Promotes Code Reusability.
+✅ Java supports Single, Multilevel, and Hierarchical inheritance (not multiple inheritance with classes).
+
+Benefits
+♻️ Code Reusability
+📖 Easy to maintain
+🚀 Less code duplication
+
+Practice q
 
