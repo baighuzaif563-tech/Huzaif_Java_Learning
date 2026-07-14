@@ -1,0 +1,13 @@
+*******************************************************************************/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		 ArrayList<Integer> list = new ArrayList<>(
+            Arrays.asList(42, 17, 89, 3, 56, 24, 91, 12, 67, 38, 75, 5, 29, 83, 14)
+        );
+        int max=Collections.max(list);
+         int min=Collections.min(list);
+         
+         System.out.println("The max Element in the List is"+" "+max+" "+"The min Element is"+" "+min);
+	}
