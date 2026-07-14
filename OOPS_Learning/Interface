@@ -1,0 +1,243 @@
+Imp Points of Interface
+
+
+Interface = 100% abstraction ka primary tool (traditionally).
+Interface ka object nahi ban sakta.
+Interface methods by default public abstract hote hain.
+Interface variables by default public static final hote hain.
+Interface constructor nahi hota.
+Class multiple interfaces implement kar sakti hai.
+Interface interface ko extends karta hai.
+Java 8 se default aur static methods allowed hain.
+Java 9 se private methods bhi allowed hain.
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+
+interface Light{
+    void switchOn();
+    void switchoff();
+}
+
+interface fan{
+    void startFan();
+    void stopFan();
+}
+
+class SmartRoom extends Light,fan{
+  public  void switchoff(){
+        System.out.println("The Light in the Room is Off");
+    }
+   public void switchOn(){
+       System.out.println("The Light in the Room is ON");
+   }
+   public void startFan(){
+       System.out.println("The Fan in the Room is On");
+   }
+   public void stopFan(){
+       System.out.println("The Fan in the Room is Off");
+   }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		SmartRoom s=new SmartRoom();
+		s.switchoff();
+		s.startFan();
+		s.stopFan();
+		s.switchOn();
+	}
+}
+
+
+20. Most Common Interview Questions
+
+✔ Can we create object of interface?
+
+No.
+
+✔ Can interface have constructor?
+
+No.
+
+✔ Can interface have variables?
+
+Yes
+
+But
+
+public static final
+
+✔ Can interface have static methods?
+
+Yes (Java 8)
+
+✔ Can interface have default methods?
+
+Yes (Java 8)
+
+✔ Can interface have private methods?
+
+Yes (Java 9)
+
+✔ Can a class implement multiple interfaces?
+
+Yes.
+
+✔ Difference between extends and implements?
+
+Class → extends class
+
+Class → implements interface
+
+Interface → extends interface
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+#1 Car Ex
+interface Vehicle{
+    void move();
+    void stop();
+    void reverse();
+}
+class BMW implements Vehicle{
+    public void move(){
+        System.out.println("Bmw Car is Moving");
+        
+    }
+    
+    public void stop(){
+        System.out.println("Apply the Break");
+    }
+    
+    public void reverse(){
+        System.out.println("The Car is Reversing");
+    }
+}
+
+
+class Audi implements Vehicle{
+      public void move(){
+        System.out.println("Audi Car is Moving");
+        
+    }
+    
+    public void stop(){
+        System.out.println("Apply the Break");
+    }
+    
+    public void reverse(){
+        System.out.println("The Car Audi is Reversing");
+    }
+}
+
+class Tesla implements Vehicle{
+     public void move(){
+        System.out.println("Tesla Car is Moving");
+        
+    }
+    
+    public void stop(){
+        System.out.println("Apply the Break");
+    }
+    
+    public void reverse(){
+        System.out.println("The Car  Tesla is Reversing");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    BMW b=new BMW();
+	    b.move();
+	    b.reverse();
+	    b.stop();
+	    
+	    System.out.println();
+	      Audi a=new Audi();
+	    a.move();
+	    a.reverse();
+	    a.stop();
+	    
+	}
+}
+
+
+
+
+
+Ex->2
+
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+
+interface Light{
+    void switchOn();
+    void switchoff();
+}
+
+interface fan{
+    void startFan();
+    void stopFan();
+}
+
+class SmartRoom implements Light,fan{
+  public  void switchoff(){
+        System.out.println("The Light in the Room is Off");
+    }
+   public void switchOn(){
+       System.out.println("The Light in the Room is ON");
+   }
+   public void startFan(){
+       System.out.println("The Fan in the Room is On");
+   }
+   public void stopFan(){
+       System.out.println("The Fan in the Room is Off");
+   }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		SmartRoom s=new SmartRoom();
+		s.switchoff();
+		s.startFan();
+		s.stopFan();
+		s.switchOn();
+	}
+}
+
+
+
