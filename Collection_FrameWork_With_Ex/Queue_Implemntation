@@ -1,0 +1,42 @@
+ PriorityQueue<Integer>pq=new PriorityQueue<>();// Min Heap
+  pq.offer(10);
+  pq.add(20);
+  pq.add(30);
+  
+  System.out.println("The Queue Ex Are Min Heap ");
+  System.out.println(pq.peek());
+  System.out.println(pq.poll());
+  System.out.println(pq.isEmpty());
+  System.out.println(pq.size());
+  System.out.println(pq);
+  System.out.println();
+  
+ PriorityQueue<Integer>pqr=new PriorityQueue<>(Collections.reverseOrder());
+ System.out.println("The Implementation of MAX Heap is");
+  pqr.add(20);
+  pqr.add(10);
+  pqr.add(1000);
+  pqr.add(10);
+  pqr.offer(50);
+  System.out.println(pqr.peek());
+  System.out.println(pqr.poll());
+  System.out.println(pqr.isEmpty());
+  System.out.println(pqr.size());
+  System.out.println(pqr);
+
+
+output
+
+The Queue Ex Are Min Heap 
+10
+10
+false
+2
+[20, 30]
+
+The Implementation of MAX Heap is
+1000
+1000
+false
+4
+[50, 10, 20, 10]
