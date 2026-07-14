@@ -1,4 +1,23 @@
- PriorityQueue<Integer>pq=new PriorityQueue<>();// Min Heap
+Method	Description	Example
+
+
+
+add(E e)	Inserts an element. Throws an exception if insertion fails.	pq.add(10);
+offer(E e)	Inserts an element. Returns true if successful.	pq.offer(20);
+peek()	Returns the highest-priority element without removing it. Returns null if empty.	pq.peek();
+poll()	Removes and returns the highest-priority element. Returns null if empty.	pq.poll();
+remove()	Removes and returns the highest-priority element. Throws an exception if empty.	pq.remove();
+element()	Returns the highest-priority element without removing it. Throws an exception if empty.	pq.element();
+isEmpty()	Checks whether the queue is empty.	pq.isEmpty();
+size()	Returns the number of elements.	pq.size();
+contains(Object o)	Checks whether an element exists.	pq.contains(15);
+clear()	Removes all elements.	pq.clear();
+iterator()	Returns an iterator to traverse the queue.	pq.iterator();
+
+
+
+
+PriorityQueue<Integer>pq=new PriorityQueue<>();// Min Heap
   pq.offer(10);
   pq.add(20);
   pq.add(30);
