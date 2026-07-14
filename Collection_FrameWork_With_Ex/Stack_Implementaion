@@ -1,0 +1,32 @@
+Imp_Methods
+
+Method	Time Complexity
+push()	O(1) (amortized)
+pop()	O(1)
+peek()	O(1)
+isEmpty()	O(1)
+search()	O(n)
+contains()	O(n)
+size()	O(1)
+clear()	O(n)
+
+Stack<Integer>st=new Stack<>();
+  st.push(10);
+  st.push(20);
+  st.push(30);
+  System.out.println("Stack Implementaion Is");
+  System.out.println(st.pop());
+  System.out.println(st.peek());
+  System.out.println(st.size());
+System.out.println(st.isEmpty());
+  System.out.println(st);
+  System.out.println();
+
+
+output
+Stack Implementaion Is
+30
+20
+2
+false
+[10, 20]
