@@ -1,0 +1,93 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+/*
+Given a list of integers, even numbers find karo.
+Given a list, odd numbers find karo.
+List ke saare numbers ka square nikalo.
+List ke saare numbers ko double karo.
+List mein se positive numbers find karo.
+List mein se negative numbers find karo.
+List ke saare numbers ka sum nikalo.
+List mein maximum number find karo.
+List mein minimum number find karo.
+List ke numbers ko ascending order mein sort karo.
+List ko descending order mein sort karo.
+List se duplicate elements remove karo.
+List ke first 3 elements find karo.
+List ke last 3 elements find karo.
+List ke first 5 elements ko skip karke remaining elements find karo.*/
+class Main {
+    public static void main(String[] args) {
+       List<Integer> nums = List.of(1, 2, 3, 4, 5, 6,-10,-220,10);
+
+       List<Integer>s=nums.stream().filter(x->x%2==0).toList();
+   System.out.println(s);
+       
+//2 Odd Number 
+List<Integer>odd=nums.stream().filter(x->x%2==1).toList();
+System.out.println(odd);
+
+//3  numbers ka Square nikal
+
+List<Integer>square=nums.stream().map(x->x*x).toList();
+System.out.println(square);
+
+
+//4  Double all the Elements in The List
+       
+    List<Integer>doubles=nums.stream().map(x->2*x).toList();
+System.out.println(doubles) ;
+
+    
+// 5   Sare positive Numbers ko find kro
+
+List<Integer>pos=nums.stream().filter(x->x>0).toList();
+System.out.println(pos);
+
+// List ke sare Neg No find kro
+
+
+
+// max and min in the List
+
+int mini=nums.stream().min(Integer::compareTo).orElseThrow();
+System.out.println(mini);
+
+
+int maxi=nums.stream().max(Integer::compareTo).orElseThrow();
+System.out.println(maxi);
+
+// Sort In Asc
+
+List<Integer>asc=nums.stream().sorted().toList();
+System.out.println(asc);
+
+
+// sort in Desc
+
+List<Integer>desc=nums.stream().sorted((a,b)->(b-a)).toList();
+System.out.println(desc);
+
+
+// remove Duplicates from a Array or Sorted Array
+
+List<Integer>Remove=nums.stream().distinct().toList();
+System.out.println(Remove);
+
+List<Integer>First=nums.stream().sorted().limit(3).toList();
+System.out.println(First);
+
+
+List<Integer>Last=nums.stream().sorted().limit(4).toList();
+System.out.println(Last);
+
+
+// skip the first 3 Elements
+
+
+List<Integer>Skip=nums.stream().skip(3).toList();
+System.out.println(Skip);
+       
+    }
+}
